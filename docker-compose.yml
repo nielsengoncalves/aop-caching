@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  redis:
+    image: redis
+    container_name: aop-caching-redis
+    ports:
+      - 6739:6739
+
+  memcached:
+    image: memcached
+    container_name: aop-caching-memcached
+    ports:
+      - 11211:11211
+
+

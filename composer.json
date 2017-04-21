@@ -1,0 +1,28 @@
+{
+    "name": "nielsenmg/aop-caching",
+    "description": "Aspect Oriented Programming Caching",
+    "type": "library",
+    "scripts": {
+        "generate-env:dev": "cp ./env/dev.env ./.env",
+        "generate-env:prod": "cp ./env/prod.env ./.env",
+        "generate-env:test": "cp ./env/test.env ./.env"
+    },
+    "require": {
+        "symfony/cache": "^3.2",
+        "goaop/framework": "^2.1",
+        "josegonzalez/dotenv": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nielsen",
+            "email": "nielsen.mg.udia@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AOP_Caching\\Core\\": "core/",
+            "AOP_Caching\\App\\": "app/"
+        }
+    }
+}
